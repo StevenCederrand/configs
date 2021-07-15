@@ -53,3 +53,5 @@ inoremap <C-f> <Esc>/
 " Save
 inoremap <C-z> <Esc>:w<CR>a
 nnoremap <C-z> :w <CR>
+" Remove all trailing whitespaces
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>

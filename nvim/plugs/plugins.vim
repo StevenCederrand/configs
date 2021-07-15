@@ -6,12 +6,11 @@ call plug#begin()
   Plug 'kyazdani42/nvim-web-devicons' 
   " For tree
   Plug 'kyazdani42/nvim-tree.lua'
+  " Tab-bar
+  Plug 'romgrk/barbar.nvim'
+  " lightline
+  Plug 'itchyny/lightline.vim'
 call plug#end()
-
-
-let g:tokyonight_style = "night"
-"let g:tokyonight_italic_functions = true
-let g:tokyonight_sidebars = [ "qf", "vista_kind", "terminal", "packer" ]
 
 " Load Colorscheme
 colorscheme tokyonight
@@ -41,8 +40,9 @@ let g:nvim_tree_lsp_diagnostics = 1 "0 by default, will show lsp diagnostics in 
 let g:nvim_tree_special_files = [ 'README.md', 'Makefile', 'MAKEFILE' ] " List of filenames that gets highlighted with NvimTreeSpecialFile
 let g:nvim_tree_show_icons = {
     \ 'git': 1,
-    \ 'folders': 0,
-    \ 'files': 0,
+    \ 'folders': 1,
+    \ 'files': 1,
+    \ 'folder_arrows': 1
     \ }
 "If 0, do not show the icons for one of 'git' 'folder' and 'files'
 "1 by default, notice that if 'files' is 1, it will only display
@@ -60,3 +60,17 @@ set termguicolors " this variable must be enabled for colors to be applied prope
 
 " a list of groups can be found at `:help nvim_tree_highlight`
 highlight NvimTreeFolderIcon guibg=blue
+
+" lightline config
+set laststatus=2
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
