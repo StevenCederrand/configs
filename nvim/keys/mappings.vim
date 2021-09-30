@@ -55,3 +55,12 @@ inoremap <C-z> <Esc>:w<CR>a
 nnoremap <C-z> :w <CR>
 " Remove all trailing whitespaces
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+" NerdTree
+nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <leader>r :NvimTreeRefresh<CR>
+nnoremap <leader>n :NvimTreeFindFile<CR>
+
+" fzf
+nnoremap <S-f> :Files <CR>
+" Ripgrep
+nnoremap <S-p> :Rg <CR>
