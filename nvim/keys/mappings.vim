@@ -59,8 +59,20 @@ nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 nnoremap <C-n> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
-
 " fzf
 nnoremap <S-f> :Files <CR>
 " Ripgrep
 nnoremap <S-p> :Rg <CR>
+" Remove search highlight
+nnoremap <esc> :noh <CR>
+
+" Tab buffers
+nnoremap <leader>w :BufferClose<CR>
+nnoremap <leader>1 :BufferGoto 1<CR>
+nnoremap <leader>2 :BufferGoto 2<CR>
+nnoremap <leader>3 :BufferGoto 3<CR>
+nnoremap <leader>4 :BufferGoto 4<CR>
+nnoremap <leader>5 :BufferGoto 5<CR>
+nnoremap <leader>6 :BufferGoto 6<CR>
+nnoremap <leader>7 :BufferGoto 7<CR>
+nnoremap <leader>8 :BufferGoto 8<CR>
