@@ -76,3 +76,12 @@ nnoremap <leader>5 :BufferGoto 5<CR>
 nnoremap <leader>6 :BufferGoto 6<CR>
 nnoremap <leader>7 :BufferGoto 7<CR>
 nnoremap <leader>8 :BufferGoto 8<CR>
+
+" Vertical split
+nnoremap <leader>v :vsp<CR>
+" Horizontal split
+nnoremap <leader>h :sp<CR>
+
+" jump to next error
+nmap <leader>j :call CocAction('diagnosticNext')<cr>
+nmap <leader>k :call CocAction('diagnosticPrevious')<cr>
