@@ -25,4 +25,3 @@ let g:lightline = {
       \ }
 
 source $HOME/.config/nvim/plugs/nvim-tree.vim
-

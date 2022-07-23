@@ -85,3 +85,7 @@ nnoremap <leader>h :sp<CR>
 " jump to next error
 nmap <leader>j :call CocAction('diagnosticNext')<cr>
 nmap <leader>k :call CocAction('diagnosticPrevious')<cr>
+
+" terminal mappings
+tnoremap <Esc> <C-\><C-n>
+nmap <leader>t :term <cr>
