@@ -25,3 +25,7 @@ let g:lightline = {
       \ }
 
 source $HOME/.config/nvim/plugs/nvim-tree.vim
+
+lua << EOF
+require('hlargs').setup()
+EOF

@@ -66,6 +66,8 @@ nnoremap <S-p> :Rg <CR>
 " Remove search highlight
 nnoremap <esc> :noh <CR>
 
+" Close current q
+nnoremap <leader>q :q<CR>
 " Tab buffers
 nnoremap <leader>w :BufferClose<CR>
 nnoremap <leader>1 :BufferGoto 1<CR>
@@ -76,6 +78,7 @@ nnoremap <leader>5 :BufferGoto 5<CR>
 nnoremap <leader>6 :BufferGoto 6<CR>
 nnoremap <leader>7 :BufferGoto 7<CR>
 nnoremap <leader>8 :BufferGoto 8<CR>
+nnoremap <leader>9 :BufferGoto 9<CR>
 
 " Vertical split
 nnoremap <leader>v :vsp<CR>
@@ -89,3 +92,14 @@ nmap <leader>k :call CocAction('diagnosticPrevious')<cr>
 " terminal mappings
 tnoremap <Esc> <C-\><C-n>
 nmap <leader>t :term <cr>
+
+nmap <leader>g :GitBlameToggle<cr>
+
+" automatically insert the close brackets, parenthesis and quotes
+inoremap { {}<Esc>ha
+inoremap ( ()<Esc>ha
+inoremap [ []<Esc>ha
+inoremap " ""<Esc>ha
+inoremap ' ''<Esc>ha
+inoremap ` ``<Esc>ha
+

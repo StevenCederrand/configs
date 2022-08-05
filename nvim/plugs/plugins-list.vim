@@ -1,6 +1,7 @@
 call plug#begin()
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'folke/tokyonight.nvim'
+  Plug 'morhetz/gruvbox'
   Plug 'rust-lang/rust.vim'
   " For tree icons
   Plug 'kyazdani42/nvim-web-devicons'
@@ -15,5 +16,8 @@ call plug#begin()
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'
   Plug 'psliwka/vim-smoothie'
+  Plug 'f-person/git-blame.nvim'
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+  Plug 'nvim-treesitter/nvim-treesitter'
+  Plug 'm-demare/hlargs.nvim'
 call plug#end()
