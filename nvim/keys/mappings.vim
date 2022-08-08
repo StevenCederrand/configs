@@ -103,3 +103,4 @@ inoremap " ""<Esc>ha
 inoremap ' ''<Esc>ha
 inoremap ` ``<Esc>ha
 
+nnoremap <silent> gd :call CocAction('jumpDefinition') <CR>
