@@ -20,4 +20,6 @@ call plug#begin()
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
   Plug 'nvim-treesitter/nvim-treesitter'
   Plug 'm-demare/hlargs.nvim'
+  Plug 'scrooloose/vim-slumlord'
+  Plug 'aklt/plantuml-syntax'
 call plug#end()
