@@ -104,3 +104,5 @@ inoremap ' ''<Esc>ha
 inoremap ` ``<Esc>ha
 
 nnoremap <silent> gd :call CocAction('jumpDefinition') <CR>
+nnoremap t2 :set ts=2 sw=2<CR>
+nnoremap t4 :set ts=4 sw=4<CR>
