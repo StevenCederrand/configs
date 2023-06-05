@@ -23,6 +23,3 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 9
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = "0"
-
-vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
