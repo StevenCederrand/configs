@@ -1,4 +1,5 @@
--- for: https://github.com/nvim-treesitter/nvim-treesitter
+-- for : https://github.com/nvim-treesitter/nvim-treesitter
+
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
   ensure_installed = { "scala", "java", "rust", "javascript", "typescript", "c", "lua", "vim", "vimdoc", "query" },

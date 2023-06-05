@@ -1,4 +1,5 @@
--- for: https://github.com/ThePrimeagen/harpoon
+-- for : https://github.com/ThePrimeagen/harpoon
+
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
 

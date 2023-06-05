@@ -1,8 +1,7 @@
--- empty setup using defaults
-local g = vim.g
-
-g.nvim_tree_git_hl = 1
-g.nvim_tree_show_icons = {
+-- for : https://github.com/nvim-tree/nvim-tree.lua
+--
+vim.g.nvim_tree_git_hl = 1
+vim.g.nvim_tree_show_icons = {
     git = 0,
     folders = 1,
     files = 1,

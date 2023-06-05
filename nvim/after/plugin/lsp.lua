@@ -1,4 +1,4 @@
--- for: https://github.com/VonHeikemen/lsp-zero.nvim
+-- for : https://github.com/VonHeikemen/lsp-zero.nvim
 
 local lsp = require('lsp-zero').preset({})
 
