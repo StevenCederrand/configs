@@ -11,3 +11,4 @@ g.nvim_tree_show_icons = {
 require("nvim-tree").setup()
 
 vim.keymap.set("n", "<C-n>", "<Cmd>NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>n", "<Cmd>NvimTreeFindFile<CR>")
