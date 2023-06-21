@@ -60,4 +60,12 @@ return require('packer').startup(function(use)
             require("nvim-tree").setup {}
         end
     }
+
+    use "nvim-lua/plenary.nvim"
+    -- for nvim-metals
+    use({'scalameta/nvim-metals', requires = { "nvim-lua/plenary.nvim" }})
+
+    -- nvim bars
+    use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
+    use 'romgrk/barbar.nvim'
 end)
