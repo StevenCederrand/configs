@@ -4,6 +4,7 @@ require("barbar").setup()
 
 vim.keymap.set("n", "<A-,>", "<Cmd>BufferPrevious<CR>")
 vim.keymap.set("n", "<A-.>", "<Cmd>BufferNext<CR>")
+vim.keymap.set("n", "<A-q>", "<Cmd>BufferClose<CR>")
 
 vim.keymap.set("n", "<A-1>", "<Cmd>BufferGoto 1<CR>")
 vim.keymap.set("n", "<A-2>", "<Cmd>BufferGoto 2<CR>")

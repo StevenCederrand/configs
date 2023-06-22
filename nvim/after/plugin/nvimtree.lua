@@ -7,7 +7,11 @@ vim.g.nvim_tree_show_icons = {
     files = 1,
 }
 
-require("nvim-tree").setup()
+require("nvim-tree").setup {
+    view = {
+        preserve_window_proportions = false,
+    },
+}
 
 vim.keymap.set("n", "<C-n>", "<Cmd>NvimTreeToggle<CR>")
 vim.keymap.set("n", "<leader>n", "<Cmd>NvimTreeFindFile<CR>")
