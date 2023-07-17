@@ -68,4 +68,14 @@ return require('packer').startup(function(use)
     -- nvim bars
     use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
     use 'romgrk/barbar.nvim'
+
+    -- for java lsp
+    use 'mfussenegger/nvim-dap'
+    use 'mfussenegger/nvim-jdtls'
+
+    -- nvim line
+    use 'nvim-lualine/lualine.nvim'
+
+    -- Smooth Cursor, this one is just a qol improvement
+    use 'gen740/SmoothCursor.nvim'
 end)
