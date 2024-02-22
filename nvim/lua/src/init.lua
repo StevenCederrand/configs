@@ -1,3 +1,3 @@
-require("src.set")
-require("src.remap")
-require("src.packer")
+require("src/remap")
+require("src/packer")
+require("src/set")

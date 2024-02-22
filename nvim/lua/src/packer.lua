@@ -6,22 +6,22 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
+
 	-- Telescope fzf
 	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.1',
-		-- or                            , branch = '0.1.x',
+		'nvim-telescope/telescope.nvim', tag = '0.1.5',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	-- Theme: TokyoNight 
-	use {
-		"folke/tokyonight.nvim",
-		lazy = false,
-		priority = 1000,
-		opts = {},
-	}
+        -- TokyoNight 
+        use {
+            "folke/tokyonight.nvim",
+            lazy = false,
+            priority = 1000,
+            opts = {},
+        }
 
-	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' }) 
+	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 	use('nvim-treesitter/playground')
 
 	use('theprimeagen/harpoon')
@@ -61,9 +61,11 @@ return require('packer').startup(function(use)
         end
     }
 
-    use "nvim-lua/plenary.nvim"
     -- for nvim-metals
-    use({'scalameta/nvim-metals', requires = { "nvim-lua/plenary.nvim" }})
+    use {
+        'scalameta/nvim-metals',
+        requires = { "nvim-lua/plenary.nvim" }
+    }
 
     -- nvim bars
     use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
