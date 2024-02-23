@@ -22,3 +22,7 @@ vim.keymap.set("n", "<leader>h", ":sp<CR>")
 -- useful tabbing
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
+
+-- Format j(é)son
+vim.keymap.set("n", "<leader>fj", ":%!jq .<CR>")
+vim.keymap.set("n", "<F5>", ":ket _s=@<Bar>:%s/\\s\\+$//e<Bar>:let @/=_s<Bar><CR>")

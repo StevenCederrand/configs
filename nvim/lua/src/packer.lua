@@ -80,4 +80,7 @@ return require('packer').startup(function(use)
 
     -- Smooth Cursor, this one is just a qol improvement
     use 'gen740/SmoothCursor.nvim'
+
+    -- Open Github url at cursor
+    use 'knsh14/vim-github-link'
 end)
