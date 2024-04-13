@@ -83,4 +83,9 @@ return require('packer').startup(function(use)
 
     -- Open Github url at cursor
     use 'knsh14/vim-github-link'
+
+    -- todo comments
+    use {
+        'folke/todo-comments.nvim'
+    }
 end)
