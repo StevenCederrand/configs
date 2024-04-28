@@ -1,0 +1,27 @@
+[user]
+	email = <email>
+	name = <name>
+[core]
+    editor = nvim
+[init]
+	defaultBranch = main
+[alias]
+    co = checkout
+    cob = checkout -b
+    pf = !git push origin `git branch --show-current` --force-with-lease
+    rebase = rebase -i origin/main
+    sa = stash apply
+    ss = stash save
+    st = status
+[pull]
+	rebase = true
+[branch]
+	autosetuprebase = always
+[branch "master"]
+	rebase = true
+[branch "main"]
+	rebase = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[push]
+	autoSetupRemote = true
