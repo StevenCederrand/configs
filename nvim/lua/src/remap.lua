@@ -25,4 +25,13 @@ vim.keymap.set("v", ">", ">gv")
 
 -- Format j(é)son
 vim.keymap.set("n", "<leader>fj", ":%!jq .<CR>")
-vim.keymap.set("n", "<F5>", ":ket _s=@<Bar>:%s/\\s\\+$//e<Bar>:let @/=_s<Bar><CR>")
+vim.keymap.set("n", "<F5>", ":set _s=@<Bar>:%s/\\s\\+$//e<Bar>:let @/=_s<Bar><CR>")
+
+-- Mason Quick access
+vim.keymap.set("n", "<leader>m", ":Mason <CR>")
+
+-- Display Error
+vim.keymap.set("n", "<leader>E", ":lua vim.diagnostic.open_float() <CR>")
+
+-- Save
+vim.keymap.set("n", "<leader>Z", ":w <CR>")

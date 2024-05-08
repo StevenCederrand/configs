@@ -21,7 +21,11 @@ return require('packer').startup(function(use)
             opts = {},
         }
 
-	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+	use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+
 	use('nvim-treesitter/playground')
 
 	use('theprimeagen/harpoon')
@@ -38,7 +42,7 @@ return require('packer').startup(function(use)
                 {                                      -- Optional
                 'williamboman/mason.nvim',
                 run = function()
-                    pcall(vim.cmd, 'MasonUpdate')
+                    pcall(vim.api.cmd, 'MasonUpdate')
                 end,
             },
             {'williamboman/mason-lspconfig.nvim'}, -- Optional
@@ -88,4 +92,13 @@ return require('packer').startup(function(use)
     use {
         'folke/todo-comments.nvim'
     }
+    -- trailing whitespace highlighter
+    use({
+        "cappyzawa/trim.nvim",
+        config = function()
+            require("trim").setup({})
+        end
+    })
+
+    use 'stevencederrand/syntax-epee'
 end)
