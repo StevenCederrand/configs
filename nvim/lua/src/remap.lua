@@ -54,3 +54,6 @@ vim.keymap.set("n", "<c-k>", ":resize -1<CR>");
 vim.keymap.set("n", "<c-j>", ":resize +1<CR>");
 vim.keymap.set("n", "<c-h>", ":vertical resize +1<CR>");
 vim.keymap.set("n", "<c-l>", ":vertical resize -1<CR>");
+
+vim.keymap.set("n", "fe", "]}")
+vim.keymap.set("n", "fs", "[{")

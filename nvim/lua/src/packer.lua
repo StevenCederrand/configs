@@ -92,6 +92,10 @@ return require('packer').startup(function(use)
     use {
         'folke/todo-comments.nvim'
     }
+
+    use {
+        'folke/zen-mode.nvim'
+    }
     -- trailing whitespace highlighter
     use({
         "cappyzawa/trim.nvim",
