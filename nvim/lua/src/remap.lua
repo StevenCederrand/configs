@@ -35,3 +35,22 @@ vim.keymap.set("n", "<leader>E", ":lua vim.diagnostic.open_float() <CR>")
 
 -- Save
 vim.keymap.set("n", "<leader>Z", ":w <CR>")
+
+-- Sane paste
+vim.keymap.set("v", "p", "P")
+
+-- Force close buffer
+vim.keymap.set("n", "<leader>bd", ":bd! <CR>")
+
+-- Open blank buffer
+vim.keymap.set("n", "<leader>bn", ":enew <CR>")
+
+-- Set Tabs to 2 or 4
+vim.keymap.set("n", "<leader>t2", ":set tabstop=2 | set shiftwidth=2 <CR>")
+vim.keymap.set("n", "<leader>t4", ":set tabstop=4 | set shiftwidth=4 <CR>")
+
+-- Scale window vertically and Horisontally
+vim.keymap.set("n", "<c-k>", ":resize -1<CR>");
+vim.keymap.set("n", "<c-j>", ":resize +1<CR>");
+vim.keymap.set("n", "<c-h>", ":vertical resize +1<CR>");
+vim.keymap.set("n", "<c-l>", ":vertical resize -1<CR>");
