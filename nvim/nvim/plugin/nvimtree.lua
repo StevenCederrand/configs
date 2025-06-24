@@ -20,6 +20,3 @@ require("nvim-tree").setup({
         git_ignored = false,
     }
 })
-
-vim.keymap.set("n", "<C-n>", "<Cmd>NvimTreeToggle<CR>")
-vim.keymap.set("n", "<leader>n", "<Cmd>NvimTreeFindFile<CR>")

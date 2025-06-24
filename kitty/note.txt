@@ -1,0 +1,1 @@
+For the docs: https://sw.kovidgoyal.net/kitty/overview/#

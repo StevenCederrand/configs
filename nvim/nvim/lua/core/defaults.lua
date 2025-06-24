@@ -22,4 +22,3 @@ vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 9
 vim.opt.updatetime = 50
-vim.opt.colorcolumn = "0"
