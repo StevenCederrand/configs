@@ -57,3 +57,43 @@ vim.keymap.set("n", "<c-l>", ":vertical resize -1<CR>");
 
 vim.keymap.set("n", "fe", "]}")
 vim.keymap.set("n", "fs", "[{")
+
+
+-- barbar
+vim.keymap.set("n", "<A-,>", "<Cmd>BufferPrevious<CR>")
+vim.keymap.set("n", "<A-.>", "<Cmd>BufferNext<CR>")
+vim.keymap.set("n", "<A-q>", "<Cmd>BufferClose<CR>")
+
+vim.keymap.set("n", "<A-1>", "<Cmd>BufferGoto 1<CR>")
+vim.keymap.set("n", "<A-2>", "<Cmd>BufferGoto 2<CR>")
+vim.keymap.set("n", "<A-3>", "<Cmd>BufferGoto 3<CR>")
+vim.keymap.set("n", "<A-4>", "<Cmd>BufferGoto 4<CR>")
+vim.keymap.set("n", "<A-5>", "<Cmd>BufferGoto 5<CR>")
+vim.keymap.set("n", "<A-6>", "<Cmd>BufferGoto 6<CR>")
+vim.keymap.set("n", "<A-7>", "<Cmd>BufferGoto 7<CR>")
+vim.keymap.set("n", "<A-8>", "<Cmd>BufferGoto 8<CR>")
+vim.keymap.set("n", "<A-9>", "<Cmd>BufferGoto 9<CR>")
+
+vim.keymap.set("n", "<A-q>", "<Cmd>BufferClose<CR>")
+
+-- for : https://github.com/tpope/vim-fugitive
+vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
+vim.keymap.set("n", "<leader>gb", "<Cmd>Git blame<CR>")
+vim.keymap.set("n", "<leader>ga", "<Cmd>Git add -p<CR>")
+vim.keymap.set("n", "<leader>gl", "<Cmd>GetCommitLink<CR>")
+
+-- for : nvim tree
+vim.keymap.set("n", "<C-n>", "<Cmd>NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>n", "<Cmd>NvimTreeFindFile<CR>")
+
+-- for : syntax epee
+vim.keymap.set("n", "<leader>e", function() require("syntax-epee").stab() end)
+
+-- for : telescope
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
+vim.keymap.set('n', '<leader>ps', builtin.live_grep, {})
+vim.keymap.set('n', '<C-p>', builtin.git_files, {})
+
+-- for : https://github.com/mbbill/undotree
+vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)

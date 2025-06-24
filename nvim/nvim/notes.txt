@@ -1,0 +1,11 @@
+-- Installing neovim on debian
+https://www.reddit.com/r/debian/comments/188d3wc/neovim_on_debian/
+
+-- Pretty good medium article for setting up folder structure
+https://medium.com/@jacksmithxyz/a-beginners-guide-to-neovim-configuration-9e7dac182de5
+
+-- Packr: Getting started
+https://github.com/lewis6991/pckr.nvim?tab=readme-ov-file#quickstart
+
+-- For neovim built in lsp support
+https://www.youtube.com/watch?v=IZnhl121yo0&ab_channel=AdibHanna
