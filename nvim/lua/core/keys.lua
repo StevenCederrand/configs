@@ -87,7 +87,7 @@ vim.keymap.set("n", "<C-n>", "<Cmd>NvimTreeToggle<CR>")
 vim.keymap.set("n", "<leader>n", "<Cmd>NvimTreeFindFile<CR>")
 
 -- for : syntax epee
-vim.keymap.set("n", "<leader>e", function() require("syntax-epee").stab() end)
+--vim.keymap.set("n", "<leader>e", function() require("syntax-epee").stab() end)
 
 -- for : telescope
 local builtin = require('telescope.builtin')
