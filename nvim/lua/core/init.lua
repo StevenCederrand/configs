@@ -1,4 +1,5 @@
-require("core/packr")
+require("core/lazy")
 require("core/lsp")
 require("core/keys")
+require("core/colors")
 require("core/defaults")
