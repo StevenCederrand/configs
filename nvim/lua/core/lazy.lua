@@ -84,7 +84,7 @@ local plugins = {
 	'folke/todo-comments.nvim',
 	'folke/zen-mode.nvim',
     -- 'stevencederrand/syntax-epee',
-
+    'karb94/neoscroll.nvim',
     -- Colorsheme
     'folke/tokyonight.nvim',
     'savq/melange-nvim',
