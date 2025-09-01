@@ -1,0 +1,3 @@
+Most if not all of the configs here are taken from
+https://github.com/neovim/nvim-lspconfig/tree/master/lua/lspconfig/configs. Recommend checking those out, over using
+my configs here.
