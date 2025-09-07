@@ -25,16 +25,12 @@ vim.keymap.set("v", ">", ">gv")
 
 -- Format j(é)son
 vim.keymap.set("n", "<leader>fj", ":%!jq .<CR>")
-vim.keymap.set("n", "<F5>", ":set _s=@<Bar>:%s/\\s\\+$//e<Bar>:let @/=_s<Bar><CR>")
 
 -- Mason Quick access
 vim.keymap.set("n", "<leader>m", ":Mason <CR>")
 
--- Display Error
-vim.keymap.set("n", "<leader>E", ":lua vim.diagnostic.open_float() <CR>")
-
--- Save
-vim.keymap.set("n", "<leader>Z", ":w <CR>")
+-- Lazy Quick access
+vim.keymap.set("n", "<leader>l", ":Lazy<CR>")
 
 -- Sane paste
 vim.keymap.set("v", "p", "P")
@@ -57,7 +53,6 @@ vim.keymap.set("n", "<c-l>", ":vertical resize -1<CR>");
 
 vim.keymap.set("n", "fe", "]}")
 vim.keymap.set("n", "fs", "[{")
-
 
 -- barbar
 vim.keymap.set("n", "<A-,>", "<Cmd>BufferPrevious<CR>")
@@ -86,9 +81,6 @@ vim.keymap.set("n", "<leader>gl", "<Cmd>GetCommitLink<CR>")
 vim.keymap.set("n", "<C-n>", "<Cmd>NvimTreeToggle<CR>")
 vim.keymap.set("n", "<leader>n", "<Cmd>NvimTreeFindFile<CR>")
 
--- for : syntax epee
---vim.keymap.set("n", "<leader>e", function() require("syntax-epee").stab() end)
-
 -- for : telescope
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
@@ -97,3 +89,5 @@ vim.keymap.set('n', '<C-p>', builtin.git_files, {})
 
 -- for : https://github.com/mbbill/undotree
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
+
+vim.keymap.set('n', '<A-t>', '<Cmd>TodoQuickFix<CR>')

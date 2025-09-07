@@ -78,13 +78,15 @@ local plugins = {
     'nvim-lualine/lualine.nvim',
     'mbbill/undotree',
 	'tpope/vim-fugitive',
-    'lewis6991/gitsigns.nvim', -- todo: look further into this.. Seems powerful
+    'lewis6991/gitsigns.nvim', -- TODO: look further into this.. Seems powerful
     -- Open Github url at cursor
 	'knsh14/vim-github-link',
 	'folke/todo-comments.nvim',
 	'folke/zen-mode.nvim',
-    -- 'stevencederrand/syntax-epee',
-    'karb94/neoscroll.nvim',
+    -- NOTE: if you have a plugin in a local folder then you can add it like below
+    -- { dir = 'path/to/plugin' },
+    'stevencederrand/syntax-epee',
+
     -- Colorsheme
     'folke/tokyonight.nvim',
     'savq/melange-nvim',
