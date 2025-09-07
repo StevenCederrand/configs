@@ -14,7 +14,7 @@ return {
             url = 'https://www.schemastore.org/api/json/catalog.json',
         },
         schemas = {
-            ['/home/sc/repos/whimsical/resources/schemas/whimsical.yaml'] = 'wh_config_*.yaml',
+            ['/Users/stevencederrand/repos/whimsical/resources/schemas/whimsical.yaml'] = 'wh_config_*.yaml',
         },
     },
 
