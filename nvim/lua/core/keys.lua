@@ -91,3 +91,6 @@ vim.keymap.set('n', '<C-p>', builtin.git_files, {})
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 vim.keymap.set('n', '<A-t>', '<Cmd>TodoQuickFix<CR>')
+
+vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
